@@ -1,4 +1,8 @@
-import { faHouse, faGamepad } from "@fortawesome/free-solid-svg-icons";
+import {
+  faHouse,
+  faGamepad,
+  faCircleInfo,
+} from "@fortawesome/free-solid-svg-icons";
 import { faDiscord, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import React from "react";
 import NavBarItem from "./NavBarItem";
@@ -22,6 +26,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               link="https://twitter.com/cherri_blu"
               icon={faTwitter}
             />
+            <NavBarItem name="About" link="/about" icon={faCircleInfo} />
           </ul>
         </div>
       </aside>
